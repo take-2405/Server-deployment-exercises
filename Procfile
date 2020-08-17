@@ -1,1 +1,1 @@
-web:Server-deployment-exercises
+web:bin/Attendance
