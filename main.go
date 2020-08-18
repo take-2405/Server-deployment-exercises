@@ -19,7 +19,7 @@ func init() {
 	if port == "" {
 		log.Fatal("$PORT must be set")
 	}
-	flag.StringVar(&addr, "addr", port, "tcp host:port to connect")
+	flag.StringVar(&addr, "addr",port, "tcp host:port to connect")
 	flag.Parse()
 }
 
