@@ -1,1 +1,1 @@
-web:bin/Attendance
+web: ./bin/Attendance

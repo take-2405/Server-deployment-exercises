@@ -15,7 +15,7 @@ var (
 func init() {
 	Server = gin.Default()
 	Server.GET("/", handler.HandlePing())
-	Server.GET("/Auth", handler.HandleAuthCreate())
+	Server.POST("/Auth", handler.HandleAuthCreate())
 	Server.GET("/Active", middleware.Authenticate(handler.HandleResistTimeData("active")))
 	Server.GET("/BreakIN", middleware.Authenticate(handler.HandleResistTimeData("breakIN")))
 	Server.GET("/BreakOUT", middleware.Authenticate(handler.HandleResistTimeData("breakOUT")))
